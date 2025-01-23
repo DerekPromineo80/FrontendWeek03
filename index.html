@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<!-- Requirement 1: Create a Home Page named "index.html" -->
+<!-- This is the Home Page -->
+<!-- I chose to do a "Simpsons Fan Page" -->
+<!-- Week 2: See Element, Class, ID Selectors below -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- Week 2 Requirement: Linking to external CSS file (or CSS Page)-->
+    <!-- This is known as "External CSS"-->
+    <!-- Week 3, changed href -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Week 3 Bootstrap Grid Video -->
+    <style>
+        div {
+            border-style: solid;
+            border-color: black;
+        }
+    </style>
+</head>
+<!-- Week 2: added Class Selector for the Body Element -->
+<body class="newbody">
+    <header>
+        <!-- Week 2: H1 and H3 use Element Selectors -->
+        <h1>Home Page</h1>
+        <h3>Welcome to Derek's "Simpsons Fan Page".</h3>
+        <br>
+        <!-- Week 2: P uses Element Selector -->
+        <p>This is the home page of the "Simpsons Fan Page". This is based on the television show "The Simpsons".</p>
+    </header>
+
+    <!-- Week 3 -->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <!-- navbar brand -->
+        <a class="navbar-brand" href="index.html">Simpsons</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+        aria-controler="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="homer.html">Homer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="marge.html">Marge</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bart.html">Bart</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="lisa.html">Lisa</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
+                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Kids
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="bart.html">Bart</a>
+                        <a class="dropdown-item" href="lisa.html">Lisa</a>
+                        <a class="dropdown-item" href="maggie.html">Maggie</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- Week 3 -->
+    <div class="alert alert-primary" role="alert">
+        It works!
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                Content
+            </div>
+            <div class="col-lg-3">
+                Content
+            </div>
+            <div class="col-lg-3">
+                Content
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                Content
+            </div>
+            <div class="col-sm">
+                Content
+            </div>
+            <div class="col-sm">
+                <div class="row">
+                    <div class="col-md-8">
+                        Here's my 8
+                    </div>
+                    <div class="col-md-4">
+                        Here's my 4
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Week 3 Warnings -->
+    <div class="alert alert-primary">
+        Primary
+    </div>
+    <div class="alert alert-secondary">
+        Secondary
+    </div>
+    <div class="alert alert-success">
+        Success
+    </div>
+    <div class="alert alert-danger">
+        Danger
+    </div>
+    <div class="alert alert-warning">
+        Warning
+    </div>
+
+    <button class="btn btn-primary">Primary Button</button>
+    <button class="btn btn-secondary">Secondary Button</button>
+    <button class="btn btn-success">Success Button</button>
+    <button class="btn btn-danger">Danger Button</button>
+    <button class="btn btn-warning">Warning Button</button>
+    <button class="btn btn-info">Info Button</button>
+    <button class="btn btn-light">Light Button</button>
+    <button class="btn btn-dark">Dark Button</button>
+    <button type="button" class="btn btn-link">Link</button>
+    <br><br>
+    
+    <!-- Week 3 -->
+    <button class="btn btn-info">
+        Notifications <span class="badge badge-secondary">5</span>
+    </button>
+
+    <h3>Invite Friends <span class="badge badge-primary">NEW</span></h3>
+
+    <!-- Week 3 -->
+    <table class="table table-dark table-hover">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        <tr>
+            <th>1</th>
+            <th>Sam</th>
+            <th>sam@email.com</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>Tom</th>
+            <th>tom@email.com</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>Sally</th>
+            <th>sally@email.com</th>
+        </tr>
+    </table>
+
+    <!-- Week 3 <script> -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+    <!-- Week 1 Requirement 3: Add 3 images. This is image 1 of the 3 required. -->
+    <img src="00simpsons-home.jpeg" alt="The Simpsons Home"/>
+    <br>
+    <!-- Week 2: ID Selector used, home page only -->
+    <div id="box-model"><h3><b>Home Page Table of Contents:</b></h3></div>
+    <!-- Week 2: UL uses Element Selector -->
+    <ul>
+        <!-- Week 1 Requirement 2: Create at least 3 pages to navigate between. -->
+        <!-- Week 1 Requirement 3: Create a list -->
+        <!-- Page 1: the Home Page (index.html) -->
+        <!-- Week 2: Hyperlinks use Element Selectors and Pseudo-classes -->
+        <li><a href="index.html">Home Page</a></li>
+        <!-- Page 2: Homer Simpson -->
+        <li><a href="homer.html">Homer Simpson</a></li>
+        <!-- Page 3: Marge Simpson -->
+        <li><a href="marge.html">Marge Simpson</a></li>
+        <!-- Page 4: Bart Simpson -->
+        <li><a href="bart.html">Bart Simpson</a></li>
+        <!-- Page 5: Lisa Simpson -->
+        <li><a href="lisa.html">Lisa Simpson</a></li>
+        <!-- Page 6: Maggie Simpson -->
+        <li><a href="maggie.html">Maggie Simpson</a></li>
+    </ul>
+
+    <br>
+    <br>
+    <p>Below is a table that shows Episode Titles which contain the character name.</p>
+    <!-- Requirement 3: Table -->
+    <!-- Week 2: removing the border="1" becuase I can do that in External CSS -->
+    <!-- tr, th, td all use Element Selectors -->
+    <table>
+        <thead>
+            <tr>
+                <th>Character Name</th>
+                <th>Episode Title</th>
+                <th>Season</th>
+                <th>Episode #</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Homer</td>
+                <td>The City of New York vs. Homer Simpson</td>
+                <td>9</td>
+                <td>179</td>
+            </tr>
+            <tr>
+                <td>Marge</td>
+                <td>A Streetcar Named Marge</td>
+                <td>4</td>
+                <td>61</td>
+            </tr>
+            <tr>
+                <td>Bart</td>
+                <td>Bart the Genius</td>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Lisa</td>
+                <td>Mr. Lisa Goes to Washington</td>
+                <td>3</td>
+                <td>37</td>
+            </tr>
+            <tr>
+                <td>Maggie</td>
+                <td>And Maggie Makes Three</td>
+                <td>6</td>
+                <td>116</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br>
+    <br>
+
+    <p>Enter in a Season number and an Episode Title:</p>
+    <!-- Requirement 3: Form -->
+    <!-- Week 2: Form Label, type="text", type="submit" all use Element Selectors -->
+    <form>
+        <label for="SeasonNumber">Season Number:</label><br>
+        <input type="text" id="SeasonNumber" name="SeasonNumber"><br>
+        <label for="EpisodeName">Episode name:</label><br>
+        <input type="text" id="EpisodeName" name="EpisodeName"><br>
+        <input type="submit" value="Submit">
+    </form>
+
+
+    <br>
+
+    <!-- End of the Home Page -->
+</body>
+</html>
