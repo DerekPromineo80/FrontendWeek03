@@ -1,161 +1,191 @@
 <!DOCTYPE html>
-<!-- Week 3:  -->
+<!-- Week 3: Coding Assignment -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home Page</title>
+    <title>Accounting Home Page</title>
+    <!-- Connecting to Bootstrap -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
-    <header>
-        <h1>Home Page</h1>
-        <p>
-            Week 3
-        </p>
-    </header>
-
-    <!-- Week 3 -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <!-- navbar brand -->
-        <a class="navbar-brand" href="index.html">Simpsons</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
-        aria-controler="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item active">
-                    <a class="nav-link" href="homer.html">Homer</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="marge.html">Marge</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="bart.html">Bart</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="lisa.html">Lisa</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" 
-                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Kids
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="bart.html">Bart</a>
-                        <a class="dropdown-item" href="lisa.html">Lisa</a>
-                        <a class="dropdown-item" href="maggie.html">Maggie</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-
-    <!-- Week 3 -->
-    <div class="alert alert-primary" role="alert">
-        It works!
-    </div>
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6">
-                Content
-            </div>
-            <div class="col-lg-3">
-                Content
-            </div>
-            <div class="col-lg-3">
-                Content
-            </div>
-        </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm">
-                Content
-            </div>
-            <div class="col-sm">
-                Content
-            </div>
-            <div class="col-sm">
+    <!-- Week 3 Whole Body Div, Large -->
+    <div class="container-lg my-md-4 bd-layout">
+        <header>
+            <div class="container-fluid" style="border: 2px solid rgb(0, 0, 0); background-color: rgb(162, 162, 234); text-align: center">
                 <div class="row">
-                    <div class="col-md-8">
-                        Here's my 8
-                    </div>
-                    <div class="col-md-4">
-                        Here's my 4
+                    <div class="col">
+                        <h1>Accounting Home Page</h1>
+                    <p>
+                        Week 3: Derek McGuire, 2025-01-02-fe-central
+                    </p>
                     </div>
                 </div>
             </div>
+        </header>
+       
+
+        <!-- Week3 Navbar --> 
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark" style="padding-left: 22px">
+            <a class="navbar-brand" href="index.html">Accounting</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="assets.html">Assets</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="liabilities.html">Liabilities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="equity.html">Equity</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End of the Navbar -->
+
+        <!-- Week 3 Div -->
+        <div class="container-fluid" style="border: 2px; text-align:center">
+            <br>
+            Accounting Equation
+            <br>
+            <br>
+            <div class="row">
+                <!-- 1 -->
+                <div class="col-sm-3" style="border: 2px  black">
+                </div>
+                <!-- 2 -->
+                <div class="col-sm-6" style="border: 2px solid black; background-color: rgb(225, 216, 54);">
+                    <strong>Assets + Liabilities = Equity</strong>
+                    <div class="row">
+                        <div class="col-sm-9" style="border: 2px solid black; background-color: white;">
+                            <br>
+                            Assets + Liabilities   
+                            <br>
+                            <br>
+                        </div>
+                        <div class="col-sm-3" style="border: 2px solid black; background-color: white;">
+                            <br>
+                            Equity
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <!-- 3 -->
+                <div class="col-sm-3" style="border: 2px  black">
+                    
+                </div>
+            </div>
         </div>
+        <!-- End of Week 3 Div -->
+        <br>
+        <div class="container-fluid" style="text-align:center; font-weight: bold; font-variant:small-caps">
+            Jounral Entry Form:
+        </div>
+        <br>
+        <!-- Week 3 Form -->
+        <!--             -->
+        <div class="row g-3 align-items-center">
+            <div class="col-sm-3">
+            <label for="inputDateEntry" class="col-form-label">Date Entry</label>
+            </div>
+            <div class="col-auto">
+            <input type="password" id="inputDateEntry" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto">
+            <span id="passwordHelpInline" class="form-text">
+                Must be a Date "MM-DD-YY"
+            </span>
+            </div>
+        </div>
+        <div class="row g-3 align-items-center">
+            <div class="col-sm-3">
+            <label for="inputTransactionEntry" class="col-form-label">Transaction Entry</label>
+            </div>
+            <div class="col-auto">
+            <input type="password" id="inputTransactionEntry" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto">
+            <span id="passwordHelpInline" class="form-text">
+                Enter Description.
+            </span>
+            </div>
+        </div>
+        <div class="row g-3 align-items-center">
+            <div class="col-sm-3">
+            <label for="inputDebitEntry" class="col-form-label">Debit Entry</label>
+            </div>
+            <div class="col-auto">
+            <input type="password" id="inputDebitEntry" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto">
+            <span id="passwordHelpInline" class="form-text">
+                Enter Debit Amount $#,###.##
+            </span>
+            </div>
+        </div>        
+        <div class="row g-3 align-items-center">
+            <div class="col-sm-3">
+            <label for="inputCreditEntry" class="col-form-label">Credit Entry</label>
+            </div>
+            <div class="col-auto">
+            <input type="password" id="inputCreditEntry" class="form-control" aria-describedby="passwordHelpInline">
+            </div>
+            <div class="col-auto">
+            <span id="passwordHelpInline" class="form-text">
+                Enter Credit Amount $#,###.##
+            </span>
+            </div>
+        </div>
+
+        <!-- End of Week 3 Form -->
+        <br>
+        <!-- Week 3 Table -->
+        <table class="table table-dark table-hover">
+            <tr>
+                <th>Date</th>
+                <th>Transaction</th>
+                <th>Amount Debit</th>
+                <th>Amount Credit</th>
+            </tr>
+            <tr>
+                <th>01/20/25</th>
+                <th>Purchase of Land</th>
+                <th>$10,000.00</th>
+                <th>-</th>
+            </tr>
+            <tr>
+                <th>01/20/25</th>
+                <th>Cash Paid for Land</th>
+                <th>-</th>
+                <th>$10,000.00</th>
+            </tr>
+            <tr>
+                <th>01/21/25</th>
+                <th>Purchase of Server Rack</th>
+                <th>$1,000.00</th>
+                <th>-</th>
+            </tr>
+            <tr>
+                <th>01/21/25</th>
+                <th>Payment using Credit Card</th>
+                <th>-</th>
+                <th>$1,000.00</th>
+            </tr>
+        </table>
+        <!-- End of Week 3 Table -->
     </div>
 
-    <!-- Week 3 Warnings -->
-    <div class="alert alert-primary">
-        Primary
-    </div>
-    <div class="alert alert-secondary">
-        Secondary
-    </div>
-    <div class="alert alert-success">
-        Success
-    </div>
-    <div class="alert alert-danger">
-        Danger
-    </div>
-    <div class="alert alert-warning">
-        Warning
-    </div>
-
-    <button class="btn btn-primary">Primary Button</button>
-    <button class="btn btn-secondary">Secondary Button</button>
-    <button class="btn btn-success">Success Button</button>
-    <button class="btn btn-danger">Danger Button</button>
-    <button class="btn btn-warning">Warning Button</button>
-    <button class="btn btn-info">Info Button</button>
-    <button class="btn btn-light">Light Button</button>
-    <button class="btn btn-dark">Dark Button</button>
-    <button type="button" class="btn btn-link">Link</button>
-    <br><br>
-    
-    <!-- Week 3 -->
-    <button class="btn btn-info">
-        Notifications <span class="badge badge-secondary">5</span>
-    </button>
-
-    <h3>Invite Friends <span class="badge badge-primary">NEW</span></h3>
-
-    <!-- Week 3 -->
-    <table class="table table-dark table-hover">
-        <tr>
-            <th>ID</th>
-            <th>Name</th>
-            <th>Email</th>
-        </tr>
-        <tr>
-            <th>1</th>
-            <th>Sam</th>
-            <th>sam@email.com</th>
-        </tr>
-        <tr>
-            <th>2</th>
-            <th>Tom</th>
-            <th>tom@email.com</th>
-        </tr>
-        <tr>
-            <th>3</th>
-            <th>Sally</th>
-            <th>sally@email.com</th>
-        </tr>
-    </table>
 
     <!-- Week 3 <script> -->
+    <!-- Script tag goes at the bottom so that the content loads first -->
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-
 
 </body>
 </html>
