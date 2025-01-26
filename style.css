@@ -1,0 +1,33 @@
+
+/* Using this to make the placeholder lighter */
+
+
+
+/* 
+Turns out, you can just use an attribute inline with 
+
+style="font-weight: lighter" 
+
+within the input element attributes using the existing Bootstrap.
+It has the same effect as using this CSS. It makes not only the 
+'placeholder text' lighter, but also the little box with it,
+as well as any of the text you may enter.
+
+Therefore, I turned this "off" by commenting it out. 
+If you think about it, this uses less code, but it adds a file,
+and since you are already using Bootstrap, it works. 
+If there were hundreds of form inputs I would use this instead of
+inlining the attribute in each of the input tags.
+*/
+
+
+
+/*
+
+input::placeholder {
+
+    font-weight: lighter;
+  
+  }
+
+*/

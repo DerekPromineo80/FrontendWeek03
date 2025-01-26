@@ -7,10 +7,15 @@
     <title>Accounting Home Page</title>
     <!-- Connecting to Bootstrap -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Week 3 Whole Body Div, Large -->
+    <!-- The use of this allows the page to have margins on the left and right
+      when expanded to a larger viewport, or screen -->
     <div class="container-lg my-md-4 bd-layout">
+
+        <!-- Week 3 Header -->
         <header>
             <div class="container-fluid" style="border: 2px solid rgb(0, 0, 0); background-color: rgb(162, 162, 234); text-align: center">
                 <div class="row">
@@ -23,7 +28,7 @@
                 </div>
             </div>
         </header>
-       
+        <!-- End of Week 3 Header -->
 
         <!-- Week3 Navbar --> 
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark" style="padding-left: 22px">
@@ -83,23 +88,27 @@
             </div>
         </div>
         <!-- End of Week 3 Div -->
+
         <br>
+
+        <!-- Week 3: Title of the Form below -->
         <div class="container-fluid" style="text-align:center; font-weight: bold; font-variant:small-caps">
             Jounral Entry Form:
         </div>
+        
         <br>
+
         <!-- Week 3 Form -->
-        <!--             -->
         <div class="row g-3 align-items-center">
             <div class="col-sm-3">
             <label for="inputDateEntry" class="col-form-label">Date Entry</label>
             </div>
             <div class="col-auto">
-            <input type="password" id="inputDateEntry" class="form-control" aria-describedby="passwordHelpInline">
+            <input type="text" id="inputDateEntry" class="form-control" placeholder="Type Date Here" style="font-weight: lighter">
             </div>
             <div class="col-auto">
             <span id="passwordHelpInline" class="form-text">
-                Must be a Date "MM-DD-YY"
+                Must be a Date "MM/DD/YY"
             </span>
             </div>
         </div>
@@ -108,11 +117,11 @@
             <label for="inputTransactionEntry" class="col-form-label">Transaction Entry</label>
             </div>
             <div class="col-auto">
-            <input type="password" id="inputTransactionEntry" class="form-control" aria-describedby="passwordHelpInline">
+            <input type="text" id="inputTransactionEntry" class="form-control" placeholder="Type Transaction Here" style="font-weight: lighter">
             </div>
             <div class="col-auto">
             <span id="passwordHelpInline" class="form-text">
-                Enter Description.
+                Enter Description
             </span>
             </div>
         </div>
@@ -121,7 +130,7 @@
             <label for="inputDebitEntry" class="col-form-label">Debit Entry</label>
             </div>
             <div class="col-auto">
-            <input type="password" id="inputDebitEntry" class="form-control" aria-describedby="passwordHelpInline">
+            <input type="text" id="inputDebitEntry" class="form-control" placeholder="Type Amount Here" style="font-weight: lighter">
             </div>
             <div class="col-auto">
             <span id="passwordHelpInline" class="form-text">
@@ -134,7 +143,7 @@
             <label for="inputCreditEntry" class="col-form-label">Credit Entry</label>
             </div>
             <div class="col-auto">
-            <input type="password" id="inputCreditEntry" class="form-control" aria-describedby="passwordHelpInline">
+            <input type="text" id="inputCreditEntry" class="form-control" placeholder="Type Amount Here" style="font-weight: lighter">
             </div>
             <div class="col-auto">
             <span id="passwordHelpInline" class="form-text">
@@ -142,9 +151,10 @@
             </span>
             </div>
         </div>
-
         <!-- End of Week 3 Form -->
+
         <br>
+
         <!-- Week 3 Table -->
         <table class="table table-dark table-hover">
             <tr>
@@ -179,7 +189,9 @@
             </tr>
         </table>
         <!-- End of Week 3 Table -->
+
     </div>
+    <!-- End of Week 3 Whole Body Div -->
 
 
     <!-- Week 3 <script> -->
